@@ -1,7 +1,4 @@
 ---
 category: devblog
+published: false
 ---
-Naming is important:
-- blah
-- alskjdf
-- lkjsdflakj
