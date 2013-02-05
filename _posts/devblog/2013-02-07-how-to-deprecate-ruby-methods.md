@@ -1,6 +1,6 @@
 ---
 category: devblog
-published: false
+published: true
 layout: post
 ---
 
