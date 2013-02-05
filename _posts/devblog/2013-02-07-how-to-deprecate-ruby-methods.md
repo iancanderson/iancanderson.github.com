@@ -4,6 +4,50 @@ published: false
 layout: post
 ---
 
-Something something something.
-> To be or not to be.
-That sure is the question. Isn't it?
+I've seen comments like this all too often in rails projects:
+
+    {% highlight ruby %}
+    class Thing
+      def method_0
+      end
+
+      # These next 2 methods shouldn't be used anymore.
+      # Let's make sure to delete them in a future release..
+      def method_1
+      end
+
+      def method_2
+      end
+    end
+    {% endhighlight %}
+
+What's wrong with this?
+
+- The comment may no longer apply if the methods move around or someone accidentally inserts a method in between them.
+- Deprecated methods blend in with the rest of the class's methods.
+
+Simply wrap these methods inside a module called DeprecatedMethods, then mix it in to the class.
+
+For example:
+
+    {% highlight ruby %}
+    class Thing
+      def method_0
+      end
+
+      module DeprecatedMethods
+        def method_1
+        end
+
+        def method_2
+        end
+      end
+
+      include DeprecatedMethods
+    end
+    {% endhighlight %}
+
+Now the comment isn't really necessary, and the deprecated methods live within
+their own module that's namespaced to the class at hand.
+
+Nothing groundbreaking, I know, but I find it to be an easy win to keep your deprecated methods organized until they're eventually removed.

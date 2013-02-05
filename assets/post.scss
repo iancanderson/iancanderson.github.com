@@ -2,6 +2,7 @@ $width: 600px;
 $font-size: 20px;
 $title-font-size: 54px;
 $block-quote-font-size: 32px;
+$line-height: 30px;
 
 body {
   min-width: $width;
@@ -42,7 +43,7 @@ body {
   p {
     margin-top: 20px;
     margin-bottom: 20px;
-    line-height: 40px;
+    line-height: $line-height;
   }
 
   ul {
