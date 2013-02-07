@@ -13,9 +13,28 @@ title: ian c. anderson
     </div>
   </h1>
 
-  <a href="/blog">blog</a>
-  <br>
-  <a href="/devblog">devblog</a>
-  <br>
+  <h2>nerdy posts</h2>
+  <ul id="blog_archive" class="archive">
+    {% for post in site.categories.blog %}
+    <li>
+      <time pubdate datetime="{{ page.date | date: "%Y-%m-%d" }}">
+        {{ post.date | date: "%B %d, %Y" }}
+      </time>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2>nerdier posts</h2>
+  <ul id="devblog_archive" class="archive">
+    {% for post in site.categories.devblog %}
+    <li>
+      <time pubdate datetime="{{ page.date | date: "%Y-%m-%d" }}">
+        {{ post.date | date: "%B %d, %Y" }}
+      </time>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
 
 </section>
