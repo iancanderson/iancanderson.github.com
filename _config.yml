@@ -1,8 +1,6 @@
-auto: true
-permalink: /:categories/:year/:month/:day/:title
-pygments: true
-server: true
-future: false
+drafts: false
 exclude:
 - README.md
 - Rakefile
+permalink: /:categories/:year/:month/:day/:title
+pygments: true
