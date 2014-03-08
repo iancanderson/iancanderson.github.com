@@ -44,11 +44,6 @@
     #container #music #music-portfolio:last-child {
       margin-right: 0; }
 
-ul.archive {
-  list-style-type: none; }
-  ul.archive li time {
-    padding-right: 8px; }
-
 section.post header h1 {
   text-decoration: underline; }
 section.post footer {
