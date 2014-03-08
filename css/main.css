@@ -2,3 +2,65 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+#icon-links {
+  float: right; }
+  #icon-links a {
+    color: black;
+    font-size: 36px;
+    text-decoration: none;
+    padding-left: 10px; }
+
+#container {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  /*#music { */
+  /*@include span-columns(6);*/
+  /*img {*/
+  /*@include fill-parent();*/
+  /*}*/
+  /*}*/ }
+  #container:before, #container:after {
+    content: " ";
+    display: table; }
+  #container:after {
+    clear: both; }
+  #container header {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-right: 0; }
+    #container header:last-child {
+      margin-right: 0; }
+  #container #programming #programming-portfolio {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    #container #programming #programming-portfolio:last-child {
+      margin-right: 0; }
+  #container #programming #programming-image {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0; }
+    #container #programming #programming-image:last-child {
+      margin-right: 0; }
+    #container #programming #programming-image img {
+      width: 100%; }
+
+ul.archive {
+  list-style-type: none; }
+  ul.archive li time {
+    padding-right: 8px; }
+
+body {
+  background: #FFF;
+  color: #000;
+  font-family: 'Bitter';
+  font-weight: 400;
+  font-size: 20px; }

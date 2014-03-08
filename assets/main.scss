@@ -1,2 +1,14 @@
 @import 'vendor/bourbon/bourbon';
+@import 'grid-settings';
 @import 'vendor/neat/neat';
+@import 'home';
+
+$font-size: 20px;
+
+body {
+  background: #FFF;
+  color: #000;
+  font-family: 'Bitter';
+  font-weight: 400;
+  font-size: $font-size;
+}

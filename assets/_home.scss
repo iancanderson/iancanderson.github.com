@@ -1,0 +1,49 @@
+#icon-links {
+  float: right;
+  a {
+    color: black;
+    font-size: 36px;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+}
+
+#container {
+  @include outer-container;
+
+  header {
+    @include span-columns(12);
+    @include omega();
+  }
+
+  #programming { 
+
+    #programming-portfolio {
+      @include span-columns(6);
+    }
+
+    #programming-image {
+      @include span-columns(6);
+      @include omega();
+      img {
+        @include fill-parent();
+      }
+    }
+  }
+  /*#music { */
+    /*@include span-columns(6);*/
+    /*img {*/
+      /*@include fill-parent();*/
+    /*}*/
+  /*}*/
+}
+
+ul.archive {
+  list-style-type: none;
+  li {
+    time {
+      padding-right: 8px;
+    }
+  }
+}
+
