@@ -18,24 +18,28 @@
 
   #programming { 
 
-    #programming-portfolio {
+    #programming-image {
       @include span-columns(6);
     }
 
-    #programming-image {
+    #programming-portfolio {
       @include span-columns(6);
       @include omega();
-      img {
-        @include fill-parent();
-      }
     }
   }
-  /*#music { */
-    /*@include span-columns(6);*/
-    /*img {*/
-      /*@include fill-parent();*/
-    /*}*/
-  /*}*/
+
+  #music { 
+
+    #music-image {
+      @include span-columns(6);
+    }
+
+    #music-portfolio {
+      @include span-columns(6);
+      @include omega();
+    }
+
+  }
 }
 
 ul.archive {

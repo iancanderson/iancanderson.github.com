@@ -15,9 +15,15 @@ title: ian c. anderson
   </header>
 
   <div id="programming">
+    
+    <div id="programming-image">
+      <img src="assets/images/man_computer.png" />
+    </div>
+
     <div id="programming-portfolio">
-      <h2>devblog</h2>
-      <ul id="devblog-archive" class="archive">
+      <h2>programming</h2>
+      <h3>articles</h3>
+      <ul class="archive">
         {% for post in site.categories.devblog %}
         <li>
           <time pubdate datetime="{{ page.date | date: "%Y-%m-%d" }}">
@@ -28,14 +34,28 @@ title: ian c. anderson
         {% endfor %}
       </ul>
     </div>
-    
-    <div id="programming-image">
-      <img src="assets/images/man_computer.png" />
-    </div>
+
   </div>
 
   <div id="music">
-    <img src="assets/images/music_group.png" />
+    <div id="music-image">
+      <img src="assets/images/music_group.png" />
+    </div>
+    <div id="music-portfolio">
+      <h2>music</h2>
+      <ul>
+        <li>
+          <a href="http://music.iancanderson.com">bandcamp</a>
+        </li>
+        <li>
+          <a href="http://soundcloud.com/iancanderson">soundcloud</a>
+        </li>
+        <li>
+          <a href="http://www.youtube.com/user/IanCAnderson">youtube</a>
+        </li>
+      </ul>
+    </div>
+
   </div>
 
   <!--<h2>nerdy posts</h2>-->
