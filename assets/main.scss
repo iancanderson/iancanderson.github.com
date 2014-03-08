@@ -2,6 +2,7 @@
 @import 'grid-settings';
 @import 'vendor/neat/neat';
 @import 'home';
+@import 'post';
 
 $font-size: 20px;
 
@@ -11,4 +12,28 @@ body {
   font-family: 'Bitter';
   font-weight: 400;
   font-size: $font-size;
+}
+
+header {
+  @include span-columns(12);
+  @include omega();
+  a {
+    text-decoration: none;
+  }
+}
+
+footer {
+  padding-top: 2rem;
+  @include span-columns(12);
+  #icon-links {
+    a {
+      font-size: 36px;
+      text-decoration: none;
+      padding-left: 10px;
+    }
+  }
+}
+
+a {
+  color: black;
 }

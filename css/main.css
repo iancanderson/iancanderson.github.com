@@ -3,14 +3,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-#icon-links {
-  float: right; }
-  #icon-links a {
-    color: black;
-    font-size: 36px;
-    text-decoration: none;
-    padding-left: 10px; }
-
 #container {
   *zoom: 1;
   max-width: 68em;
@@ -21,14 +13,6 @@
     display: table; }
   #container:after {
     clear: both; }
-  #container header {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-right: 0; }
-    #container header:last-child {
-      margin-right: 0; }
   #container #programming #programming-image {
     float: left;
     display: block;
@@ -65,9 +49,41 @@ ul.archive {
   ul.archive li time {
     padding-right: 8px; }
 
+section.post header h1 {
+  text-decoration: underline; }
+section.post footer {
+  font-style: italic; }
+
 body {
   background: #FFF;
   color: #000;
   font-family: 'Bitter';
   font-weight: 400;
   font-size: 20px; }
+
+header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0; }
+  header:last-child {
+    margin-right: 0; }
+  header a {
+    text-decoration: none; }
+
+footer {
+  padding-top: 2rem;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  footer:last-child {
+    margin-right: 0; }
+  footer #icon-links a {
+    font-size: 36px;
+    text-decoration: none;
+    padding-left: 10px; }
+
+a {
+  color: black; }
