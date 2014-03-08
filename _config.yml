@@ -4,5 +4,3 @@ exclude:
 - Rakefile
 permalink: /:categories/:year/:month/:day/:title
 pygments: true
-assets:
-  css_compressor: sass
