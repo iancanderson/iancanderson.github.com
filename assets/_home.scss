@@ -1,31 +1,24 @@
+@mixin mobile-one-col {
+  @include media($mobile) {
+    @include span-columns(4);
+    @include omega();
+  }
+}
 
 #container {
   @include outer-container;
 
-  #programming { 
-
-    #programming-image {
-      @include span-columns(6);
-    }
-
-    #programming-portfolio {
-      @include span-columns(6);
-      @include omega();
-    }
+  .sidebar-image {
+    @include span-columns(6);
+    @include mobile-one-col();
   }
 
-  #music { 
-
-    #music-image {
-      @include span-columns(6);
-    }
-
-    #music-portfolio {
-      @include span-columns(6);
-      @include omega();
-    }
-
+  .portfolio {
+    @include span-columns(6);
+    @include omega();
+    @include mobile-one-col();
   }
+
 }
 
 
