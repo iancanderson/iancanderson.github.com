@@ -23,16 +23,12 @@ footer.main {
   text-align: center;
   padding-top: 2rem;
   @include span-columns(12);
-  #icon-links {
-    text-align: center;
-    a {
-      font-size: 36px;
-      text-decoration: none;
-      padding-left: 10px;
-    }
-    img {
-      vertical-align: middle;
-    }
+
+  a {
+    text-decoration: none;
+  }
+  img {
+    vertical-align: middle;
   }
 }
 

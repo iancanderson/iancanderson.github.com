@@ -315,6 +315,8 @@
       text-decoration: none; }
     #container ul.brand-links li {
       font-size: 2rem; }
+  #container #other-image img {
+    padding-top: 20px; }
 
 section.post header h1 {
   text-decoration: underline; }
@@ -346,14 +348,10 @@ footer.main {
   width: 100%; }
   footer.main:last-child {
     margin-right: 0; }
-  footer.main #icon-links {
-    text-align: center; }
-    footer.main #icon-links a {
-      font-size: 36px;
-      text-decoration: none;
-      padding-left: 10px; }
-    footer.main #icon-links img {
-      vertical-align: middle; }
+  footer.main a {
+    text-decoration: none; }
+  footer.main img {
+    vertical-align: middle; }
 
 a {
   color: black; }
