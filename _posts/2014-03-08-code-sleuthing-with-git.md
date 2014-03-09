@@ -17,14 +17,14 @@ layout: post
   {% highlight console %}
     $ git log -S foo
 
-    commit 8f19a1fa0d677dbabfe4ce1045fcc45b39332c19
-    Author: Ian C. Anderson <ian@redheadedlabs.com>
+    commit 8f19a1fa0...
+    Author: Ian C. Anderson
     Date:   Thu Mar 6 21:44:17 2014 -0500
 
         stop using the foo method because eww
 
-    commit 216895189566668764307880414a6a52bcbd46d5
-    Author: Ian C. Anderson <ian@redheadedlabs.com>
+    commit 216895189...
+    Author: Ian C. Anderson
     Date:   Thu Mar 6 21:09:44 1999 -0500
 
         new foo method - so great!
@@ -32,21 +32,17 @@ layout: post
 
 From the [git-log docs](http://git-scm.com/docs/git-log):
 
-```
--S<string>
-   Look for differences that change the number of occurrences of the
-   specified string (i.e. addition/deletion) in a file.
-```
+> -S &lt;string&gt;
+> Look for differences that change the number of occurrences of the
+> specified string (i.e. addition/deletion) in a file.
 
 So git will spit out all of the commits that either deleted or added the given string (e.g. calls to a method)
 
 
 ## Even more powerful: git log -R
 
-```
--G<regex>
-   Look for differences whose patch text contains added/removed lines
-   that match <regex>.
-```
+> -G&lt;regex&gt;
+> Look for differences whose patch text contains added/removed lines
+> that match &lt;regex&gt;.
 
 These two commands have become indispensable tools for me, especially when navigating an old codebase with a lot of crufty code.

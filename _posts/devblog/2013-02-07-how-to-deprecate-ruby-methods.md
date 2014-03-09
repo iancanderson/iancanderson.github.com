@@ -11,8 +11,8 @@ I've seen comments like this all too often in rails projects:
       def method_0
       end
 
-      # These next 2 methods shouldn't be used anymore.
-      # Let's make sure to delete them in a future release..
+      # These methods shouldn't be used.
+      # Let's delete them in the future.
       def method_1
       end
 
