@@ -33,6 +33,13 @@
     @include hide-on-mobile();
   }
 
+  ul.brand-links {
+    list-style: none;
+    li {
+      font-size: 2rem;
+    }
+  }
+
 }
 
 
