@@ -1,5 +1,6 @@
+@import 'vendor/pygments/default';
 @import 'vendor/bourbon/bourbon';
-@import 'grid-settings';
+@import 'grid-settings'; // Have to import this before we import neat
 @import 'vendor/neat/neat';
 @import 'home';
 @import 'post';
@@ -37,4 +38,8 @@ footer.main {
 
 a {
   color: black;
+}
+
+a.icon-link {
+  text-decoration: none;
 }
