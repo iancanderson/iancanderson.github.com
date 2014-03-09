@@ -38,8 +38,8 @@ footer.main {
 
 a {
   color: black;
+  &:hover {
+    color: green;
+  }
 }
 
-a.icon-link {
-  text-decoration: none;
-}

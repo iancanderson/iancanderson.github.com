@@ -35,6 +35,9 @@
 
   ul.brand-links {
     list-style: none;
+    a {
+      text-decoration: none;
+    }
     li {
       font-size: 2rem;
     }

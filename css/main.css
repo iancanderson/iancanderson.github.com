@@ -311,6 +311,8 @@
       display: none; } }
   #container ul.brand-links {
     list-style: none; }
+    #container ul.brand-links a {
+      text-decoration: none; }
     #container ul.brand-links li {
       font-size: 2rem; }
 
@@ -355,6 +357,5 @@ footer.main {
 
 a {
   color: black; }
-
-a.icon-link {
-  text-decoration: none; }
+  a:hover {
+    color: green; }
