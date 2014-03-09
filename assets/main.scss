@@ -4,14 +4,10 @@
 @import 'home';
 @import 'post';
 
-$font-size: 20px;
-
 body {
   background: #FFF;
   color: #000;
   font-family: 'Bitter';
-  font-weight: 400;
-  font-size: $font-size;
 }
 
 header {

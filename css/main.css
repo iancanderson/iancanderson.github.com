@@ -29,6 +29,8 @@
         margin-right: 0; }
         #container .sidebar-image:last-child {
           margin-right: 0; } }
+    #container .sidebar-image img {
+      width: 100%; }
   #container .portfolio {
     float: left;
     display: block;
@@ -55,9 +57,7 @@ section.post footer {
 body {
   background: #FFF;
   color: #000;
-  font-family: 'Bitter';
-  font-weight: 400;
-  font-size: 20px; }
+  font-family: 'Bitter'; }
 
 header {
   float: left;

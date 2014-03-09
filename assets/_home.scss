@@ -11,6 +11,9 @@
   .sidebar-image {
     @include span-columns(6);
     @include mobile-one-col();
+    img {
+      width: 100%;
+    }
   }
 
   .portfolio {
