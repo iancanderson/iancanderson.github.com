@@ -5,12 +5,19 @@
   }
 }
 
+@mixin hide-on-mobile {
+  @include media($mobile) {
+    display: none;
+  }
+}
+
 #container {
   @include outer-container;
 
   .sidebar-image {
     @include span-columns(6);
-    @include mobile-one-col();
+    @include hide-on-mobile();
+
     img {
       width: 100%;
     }
@@ -20,6 +27,10 @@
     @include span-columns(6);
     @include omega();
     @include mobile-one-col();
+  }
+
+  .archive time {
+    @include hide-on-mobile();
   }
 
 }
