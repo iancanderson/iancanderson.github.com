@@ -337,6 +337,9 @@ header {
   margin-right: 0; }
   header:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 640px) {
+    header {
+      text-align: center; } }
   header a {
     text-decoration: none; }
 

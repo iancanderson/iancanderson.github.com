@@ -14,6 +14,11 @@ body {
 header {
   @include span-columns(12);
   @include omega();
+
+  @include media($mobile) {
+    text-align: center;
+  }
+
   a {
     text-decoration: none;
   }
