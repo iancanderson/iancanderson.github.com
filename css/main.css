@@ -316,6 +316,7 @@
     #container ul.brand-links li {
       font-size: 1.5rem; }
   #container #other-image img {
+    width: 80%;
     padding-top: 20px; }
 
 section.post header h1 {
