@@ -314,7 +314,7 @@
     #container ul.brand-links a {
       text-decoration: none; }
     #container ul.brand-links li {
-      font-size: 2rem; }
+      font-size: 1.5rem; }
   #container #other-image img {
     padding-top: 20px; }
 
@@ -357,3 +357,12 @@ a {
   color: black; }
   a:hover {
     color: green; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
