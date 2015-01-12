@@ -16,7 +16,11 @@ title: ian c. anderson
     <ul class="archive">
       {% for post in site.categories.devblog %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        {% if post.external_url %}
+          <a href="{{ post.external_url }}">{{ post.title }}</a>
+        {% else %}
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        {% endif %}
         <time pubdate datetime="{{ page.date | date: "%Y-%m-%d" }}">
           {{ post.date | date: "%B %d, %Y" }}
         </time>
