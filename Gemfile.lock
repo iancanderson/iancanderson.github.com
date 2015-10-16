@@ -75,3 +75,6 @@ DEPENDENCIES
   neat
   rake
   sass
+
+BUNDLED WITH
+   1.10.1
