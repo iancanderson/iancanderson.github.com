@@ -314,7 +314,7 @@
     #container ul.brand-links a {
       text-decoration: none; }
     #container ul.brand-links li {
-      font-size: 1.5rem; }
+      font-size: 1.2rem; }
   #container #other-image img {
     width: 80%;
     padding-top: 20px; }
@@ -363,23 +363,13 @@ a {
     color: green; }
 
 h1 {
-  font-size: 2.3rem; }
+  font-size: 2.0rem; }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center; }
 
 h3 {
-  font-size: 1.5rem; }
-
-@media screen and (max-width: 640px) {
-  h1 {
-    font-size: 2.0rem; }
-
-  h2 {
-    font-size: 1.7rem; }
-
-  h3 {
-    font-size: 1.2rem; } }
+  font-size: 1.2rem; }
 
 /*# sourceMappingURL=main.css.map */
