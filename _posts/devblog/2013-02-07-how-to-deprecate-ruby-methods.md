@@ -6,20 +6,20 @@ layout: post
 
 I've seen comments like this all too often in rails projects:
 
-    {% highlight ruby %}
-    class Thing
-      def method_0
-      end
+{% highlight ruby %}
+class Thing
+  def method_0
+  end
 
-      # These methods shouldn't be used.
-      # Let's delete them in the future.
-      def method_1
-      end
+  # These methods shouldn't be used.
+  # Let's delete them in the future.
+  def method_1
+  end
 
-      def method_2
-      end
-    end
-    {% endhighlight %}
+  def method_2
+  end
+end
+{% endhighlight %}
 
 What's wrong with this?
 
@@ -30,22 +30,22 @@ Simply wrap these methods inside a module called DeprecatedMethods, then mix it 
 
 For example:
 
-    {% highlight ruby %}
-    class Thing
-      def method_0
-      end
+{% highlight ruby %}
+class Thing
+  def method_0
+  end
 
-      module DeprecatedMethods
-        def method_1
-        end
-
-        def method_2
-        end
-      end
-
-      include DeprecatedMethods
+  module DeprecatedMethods
+    def method_1
     end
-    {% endhighlight %}
+
+    def method_2
+    end
+  end
+
+  include DeprecatedMethods
+end
+{% endhighlight %}
 
 Now the comment isn't really necessary, and the deprecated methods live within
 their own module that's namespaced to the class at hand.
