@@ -372,4 +372,14 @@ h2 {
 h3 {
   font-size: 1.5rem; }
 
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 2.2rem; }
+
+  h2 {
+    font-size: 1.7rem; }
+
+  h3 {
+    font-size: 1.2rem; } }
+
 /*# sourceMappingURL=main.css.map */
