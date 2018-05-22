@@ -6,7 +6,7 @@ layout: post
 
 I've seen comments like this all too often in rails projects:
 
-{% highlight ruby %}
+```ruby
 class Thing
   def method_0
   end
@@ -19,7 +19,7 @@ class Thing
   def method_2
   end
 end
-{% endhighlight %}
+```
 
 What's wrong with this?
 
@@ -30,7 +30,7 @@ Simply wrap these methods inside a module called DeprecatedMethods, then mix it 
 
 For example:
 
-{% highlight ruby %}
+```ruby
 class Thing
   def method_0
   end
@@ -45,7 +45,7 @@ class Thing
 
   include DeprecatedMethods
 end
-{% endhighlight %}
+```
 
 Now the comment isn't really necessary, and the deprecated methods live within
 their own module that's namespaced to the class at hand.

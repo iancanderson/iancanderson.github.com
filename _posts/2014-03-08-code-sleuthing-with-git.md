@@ -14,21 +14,21 @@ layout: post
 ### git log -S to the rescue
 
 
-  {% highlight console %}
-    $ git log -S foo
+```console
+  $ git log -S foo
 
-    commit 8f19a1fa0...
-    Author: Ian C. Anderson
-    Date:   Thu Mar 6 21:44:17 2014 -0500
+  commit 8f19a1fa0...
+  Author: Ian C. Anderson
+  Date:   Thu Mar 6 21:44:17 2014 -0500
 
-        stop using the foo method because eww
+      stop using the foo method because eww
 
-    commit 216895189...
-    Author: Ian C. Anderson
-    Date:   Thu Mar 6 21:09:44 1999 -0500
+  commit 216895189...
+  Author: Ian C. Anderson
+  Date:   Thu Mar 6 21:09:44 1999 -0500
 
-        new foo method - so great!
-  {% endhighlight %}
+      new foo method - so great!
+```
 
 From the [git-log docs](http://git-scm.com/docs/git-log):
 
