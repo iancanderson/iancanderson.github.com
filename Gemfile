@@ -7,3 +7,5 @@ gem 'mr_poole'
 gem 'sass'
 gem 'bourbon'
 gem 'neat'
+
+gem "webrick", "~> 1.7"
